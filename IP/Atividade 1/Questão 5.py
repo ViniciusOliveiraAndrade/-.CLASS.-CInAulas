@@ -1,4 +1,3 @@
-
 n = int(input("Digite o valor de n\n> "))
 fat = 1
 for i in range(2,n+1):
