@@ -25,7 +25,7 @@ def calcularB(n):
 	b = 500
 	for i in range(n):
 		if (b==0):
-			print("6)b. Impossível dividir por '0'(Zero). \t Último nível de interação: {}. \t Último resultado: {}".format(i,somaFor))
+			print("6)b. Impossivel dividir por '0'(Zero). \t Ultimo nivel de interacao: {}. \t Ultimo resultado: {}".format(i,somaFor))
 			break
 		somaFor += (a/b)-((a+3)/(b-10))
 		b-=20
@@ -37,7 +37,7 @@ def calcularB(n):
 	i=0
 	while i<n:
 		if (b==0):
-			print("6)b. Impossível dividir por '0'(Zero). \t Último nível de interação: {}. \t Último resultado: {}".format(i,somaFor))
+			print("6)b. Impossivel dividir por '0'(Zero). \t Ultimo nivel de interacao: {}. \t Ultimo resultado: {}".format(i,somaFor))
 			break
 		somaWhile += (a/b)-((a+3)/(b-10))
 		b-=20
