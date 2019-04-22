@@ -21,7 +21,7 @@ n = int(input("Digite o número de intervalos de idades.\n>"))
 mini = int(input("Digite a idade mínima.\n>"))
 maxi = int(input("Digite a idade máxima.\n>"))
 while maxi < mini:
-	maxi = int(input("Digite a idade máxima válida e maior que a minima que é: {}.\n>").format(mini))
+	maxi = int(input("Digite a idade máxima válida e maior que a minima que é: {}.\n>".format(mini)))
 
 
 for i in range(n):
