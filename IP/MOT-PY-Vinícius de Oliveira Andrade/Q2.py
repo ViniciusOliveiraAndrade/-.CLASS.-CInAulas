@@ -23,6 +23,7 @@ def pergarFloat(msg,msg2):
 	try:
 		floa = input("\n{}\n>".format(msg))
 		floa = float(floa.replace(",","."))
+		#tem que tratar a nota
 	except Exception as e:
 		print("\n-----------------------------------\n{}\n-----------------------------------\n".format(msg2))
 		return pergarFloat(msg,msg2)
