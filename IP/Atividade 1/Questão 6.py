@@ -18,27 +18,19 @@ def calcularA(n):
 		i+=1
 	return somaFor,somaWhile
 
-
 def calcularB(n):
 	somaFor = 0
 	a = 2
 	b = 500
 	for i in range(n):
-		if (b==0):
-			print("6)b. Impossível dividir por '0'(Zero). \t Último nível de interação: {}. \t Último resultado: {}".format(i,somaFor))
-			break
 		somaFor += (a/b)-((a+3)/(b-10))
 		b-=20
-	
 
 	somaWhile = 0
 	a = 2
 	b = 500
 	i=0
 	while i<n:
-		if (b==0):
-			print("6)b. Impossível dividir por '0'(Zero). \t Último nível de interação: {}. \t Último resultado: {}".format(i,somaFor))
-			break
 		somaWhile += (a/b)-((a+3)/(b-10))
 		b-=20
 		i+=1
@@ -66,13 +58,17 @@ def calcularC(n):
 
 
 
-n = int(input("Digite o valor de 'n'\n> "))
+n = int(input("\nDigite o valor de 'n' para a questao 6)a.\n> "))
 
 For, While = calcularA(n)
-print("6)a.\n\tResultado do 'for' é: {}\n\tResultado do 'while' é: {}".format(For, While))
+print("\tResultado do 'for' é: {}\n\tResultado do 'while' é: {}".format(For, While))
 
+n = int(input("\nDigite o valor de 'n' para a questao 6)b.\n> "))
+while n >25:
+	n = int(input("\nDigite o valor de 'n' menor que 26 para a questao 6)b.\n> "))
 For, While = calcularB(n)
-print("\n6)b.\n\tResultado do 'for' é: {}\n\tResultado do 'while' é: {}".format(For, While))
+print("\tResultado do 'for' é: {}\n\tResultado do 'while' é: {}".format(For, While))
 
+n = int(input("\nDigite o valor de 'n' para a questao 6)c.\n> "))
 For, While = calcularC(n)
-print("\n6)c.\n\tResultado do 'for' é: {}\n\tResultado do 'while' é: {}".format(For, While))
+print("\tResultado do 'for' é: {}\n\tResultado do 'while' é: {}".format(For, While))
